@@ -10,9 +10,9 @@ st.caption("Simulated portfolio · Built by Seun Ismail Adeleke · Credit Data A
 st.markdown("---")
 @st.cache_data
 def load_data():
-    portfolio = pd.read_csv("data/portfolio_metrics.csv", parse_dates=["month"])
-    risk_bands = pd.read_csv("data/risk_bands.csv")
-    regional   = pd.read_csv("data/regional.csv")
+    portfolio = pd.read_csv("portfolio_metrics.csv", parse_dates=["month"])
+    risk_bands = pd.read_csv("risk_bands.csv")
+    regional   = pd.read_csv("regional.csv")
     return portfolio, risk_bands, regional
 portfolio, risk_bands, regional = load_data()
 # ── Sidebar ──────────────────────────────────────────────────
